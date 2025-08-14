@@ -28,7 +28,72 @@
     <li>🌐 REST API Integration</li>
     <li>⚡ Instant Job Posting & Retrieval</li>
   </ul>
+<h2>📍 Customer Journey</h2>
 
+<div class="journey-step">
+    <h3>1️⃣ Landing on the Job Portal (index.html)</h3>
+    <ul>
+        <li>Users can browse job listings instantly.</li>
+        <li>Employers can use the job creation form to post new jobs.</li>
+    </ul>
+</div>
+
+<div class="journey-step">
+    <h3>2️⃣ Creating an Account / Logging In</h3>
+    <ul>
+        <li>Candidates create a profile with basic details and upload a resume.</li>
+        <li>Employers register and get dashboard access to post jobs.</li>
+    </ul>
+    <div class="note">Authentication can be implemented with Spring Security.</div>
+</div>
+
+<div class="journey-step">
+    <h3>3️⃣ Resume Parsing</h3>
+    <ul>
+        <li>System reads uploaded resumes using <b>resume_parser.py</b>.</li>
+        <li>Automatically extracts skills, education, and work experience.</li>
+    </ul>
+</div>
+
+<div class="journey-step">
+    <h3>4️⃣ Job Recommendations</h3>
+    <ul>
+        <li>Skills from resume are fed into <b>job_recommender.py</b>.</li>
+        <li>Jobs are matched and ranked by skill relevance.</li>
+    </ul>
+</div>
+
+<div class="journey-step">
+    <h3>5️⃣ Dashboard</h3>
+    <ul>
+        <li>Candidates see recommended jobs and applied job history.</li>
+        <li>Employers manage postings and review applications.</li>
+    </ul>
+</div>
+
+<div class="journey-step">
+    <h3>6️⃣ Application Process</h3>
+    <ul>
+        <li>Click "Apply" to send applications directly to employers.</li>
+        <li>Applications are saved in the database.</li>
+    </ul>
+</div>
+
+<div class="journey-step">
+    <h3>7️⃣ Continuous Updates</h3>
+    <ul>
+        <li>Employers keep posting jobs, candidates keep updating skills.</li>
+        <li>Recommendation engine keeps adapting.</li>
+    </ul>
+</div>
+
+<h2>📊 Future Enhancements</h2>
+<ul>
+    <li>JWT Authentication</li>
+    <li>Salary & Location Filters</li>
+    <li>AI Resume Improvement Suggestions</li>
+    <li>Live Chat for Interviews</li>
+</ul>
   <h2>🧱 Project Structure</h2>
   <pre>
 job-portal/
