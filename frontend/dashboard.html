@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Post a Job - Job Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Post a Job</h1>
+    <nav>
+      <a href="index.html">View Jobs</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Create a Job Posting</h2>
+      <form id="jobForm">
+        <label>Job Title:</label>
+        <input type="text" id="title" name="title" required>
+
+        <label>Company:</label>
+        <input type="text" id="company" name="company">
+
+        <label>Location:</label>
+        <input type="text" id="location" name="location">
+
+        <label>Skills Required:</label>
+        <input type="text" id="skillsRequired" name="skillsRequired">
+
+        <label>Description:</label>
+        <textarea id="description" name="description"></textarea>
+
+        <button type="submit">Post Job</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>

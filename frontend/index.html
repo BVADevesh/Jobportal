@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Job Portal</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>💼 Job Portal</h1>
+      <nav>
+        <a href="dashboard.html" class="btn">Dashboard</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Job Listings -->
+    <section>
+      <h2>Latest Jobs</h2>
+      <div id="jobs" class="job-list"></div>
+    </section>
+
+    <!-- Job Creation Demo -->
+    <section>
+      <h2>Create Job (Demo)</h2>
+      <form id="jobForm" class="job-form">
+        <div class="form-group">
+          <label for="title">Job Title <span>*</span></label>
+          <input type="text" id="title" placeholder="e.g., Frontend Developer" required />
+        </div>
+
+        <div class="form-group">
+          <label for="company">Company <span>*</span></label>
+          <input type="text" id="company" placeholder="e.g., OpenAI" required />
+        </div>
+
+        <div class="form-group">
+          <label for="location">Location</label>
+          <input type="text" id="location" placeholder="e.g., Remote / New York" />
+        </div>
+
+        <div class="form-group">
+          <label for="skillsRequired">Skills Required</label>
+          <input type="text" id="skillsRequired" placeholder="e.g., JavaScript, Spring Boot" />
+        </div>
+
+        <div class="form-group">
+          <label for="description">Job Description</label>
+          <textarea id="description" placeholder="Brief job description..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Post Job</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
